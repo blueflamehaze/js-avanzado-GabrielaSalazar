@@ -1,11 +1,12 @@
-// Importamos el módulo de donde quiera que esté y lo guardamos en la variable os
-const os = require("os");
+const os = require('os');
 
-console.log(os.version()); // Muestra nuestra versión del kernel
-console.log(os.arch()); //Se obtiene la arquitectura (x64 o x86(x32))
-console.log(os.cpus()); // Da información acerca de los cpus
-console.log(os.freemem()); // Da la memoria libre que no queda en bytes
-console.log(os.homedir()); // Carpeta del usuario actual
-console.log(os.hostname()); // Mi dirección ip (local)
-console.log(os.platform()); // Versión del sistema operativo
-console.log(os.version());
+console.log('version sistema: ', os.version()); 
+console.log('arquitectura: ',os.arch()); 
+console.log('da información acerca de los cpus: ', os.cpus());
+console.log('Número de procesadores lógicos:' + os.cpus().length);
+console.log('memoria libre en bytes', os.freemem()); 
+console.log('carpeta del usuario actual: ', os.homedir()); 
+console.log('mi direccion ip o mi hostname (local): ', os.hostname()); 
+console.log('Nombre de la versión del sistema: ', os.platform());
+console.log('Numero de la versión del sistema:' + os.release());
+console.log('version del sistema detallada: ', os.version());
