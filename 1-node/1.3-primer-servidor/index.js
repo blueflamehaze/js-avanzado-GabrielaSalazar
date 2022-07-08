@@ -11,6 +11,7 @@ const server = http.createServer((request, response) => {
   response.writeHead(status, mimeType);
   // Escribir el archivo html
   response.write("<html><body>Hola</body></html>");
+  response.end();
 });
 
 server.listen(8080);
