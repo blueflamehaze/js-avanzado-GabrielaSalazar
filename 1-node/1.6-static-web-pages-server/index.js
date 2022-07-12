@@ -1,6 +1,7 @@
 const http = require("http");
 const url = require("url");
 const fs = require("fs");
+const colors = require("colors");
 
 const server = http.createServer((request, response) => {
   const urlObject = url.parse(request.url);
@@ -48,4 +49,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(5500);
-console.log("Inicie mi primer servidor");
+console.log("Servidorcito...".rainbow);
+console.log("== esperando peticiones ==".blue);
