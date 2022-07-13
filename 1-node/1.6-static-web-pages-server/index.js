@@ -6,7 +6,7 @@ const colors = require("colors");
 const server = http.createServer((request, response) => {
   const urlObject = url.parse(request.url);
   const path = urlObject.path;
-  let fileSystemPath = "";
+  let fileSystemPath = ""
 
   if (path === "/") {
     fileSystemPath = "static/index.html";
