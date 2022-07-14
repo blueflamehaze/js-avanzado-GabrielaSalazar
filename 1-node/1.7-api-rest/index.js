@@ -11,6 +11,7 @@ const url = require("url");
 const colors = require("colors");
 
 const server = http.createServer((request, response) => {
+  // Paso 1: Obtener la path de la request
   const urlObject = url.parse(request.url);
   const path = urlObject.path;
   console.log(`Path solicitada: `, path);
